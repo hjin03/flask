@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return jsonify({
-        "message": "Hello World! 🚀 - Auto deployed via GitHub Actions!",
+        "message": "I modified this message HaHa",
         "status": "success",
         "environment": os.getenv('ENVIRONMENT', 'development')
     })
