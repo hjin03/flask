@@ -6,11 +6,10 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return jsonify({
-        "message": "Hello World! 🚀",
+        "message": "Hello World! 🚀 - Auto deployed via GitHub Actions!",
         "status": "success",
         "environment": os.getenv('ENVIRONMENT', 'development')
     })
-
 @app.route('/health')
 def health():
     return jsonify({"status": "healthy"}), 200
